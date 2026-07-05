@@ -1,0 +1,97 @@
+{
+  "best_model": "GradientBoosting",
+  "best_params": {
+    "model__regressor__learning_rate": 0.032123125512979876,
+    "model__regressor__max_depth": 4,
+    "model__regressor__n_estimators": 351,
+    "model__regressor__subsample": 0.6180909155642152
+  },
+  "cv_comparison": [
+    {
+      "model": "GradientBoosting",
+      "cv_rmse_mean": 25419.402954538036,
+      "cv_rmse_std": 3539.9689704314237,
+      "cv_mae_mean": 16426.13538913351,
+      "cv_r2_mean": 0.8799785726625112,
+      "fit_time_sec": 0.38
+    },
+    {
+      "model": "RandomForest",
+      "cv_rmse_mean": 27398.834594749245,
+      "cv_rmse_std": 3292.3644483830835,
+      "cv_mae_mean": 17777.754411823807,
+      "cv_r2_mean": 0.8610494602082476,
+      "fit_time_sec": 2.28
+    },
+    {
+      "model": "XGBoost",
+      "cv_rmse_mean": 28534.0515625,
+      "cv_rmse_std": 3102.5003390668985,
+      "cv_mae_mean": 18497.648046875,
+      "cv_r2_mean": 0.8494289636611938,
+      "fit_time_sec": 0.75
+    },
+    {
+      "model": "LinearRegression",
+      "cv_rmse_mean": 41709.94277234079,
+      "cv_rmse_std": 26984.197269808705,
+      "cv_mae_mean": 18552.865928162675,
+      "cv_r2_mean": 0.5598822447552754,
+      "fit_time_sec": 1.77
+    },
+    {
+      "model": "Ridge",
+      "cv_rmse_mean": 41848.88018273852,
+      "cv_rmse_std": 27649.60497915898,
+      "cv_mae_mean": 18411.039252911694,
+      "cv_r2_mean": 0.5515804862884577,
+      "fit_time_sec": 1.37
+    }
+  ],
+  "test_metrics": {
+    "rmse": 22296.241430973045,
+    "mae": 14384.07086169003,
+    "r2": 0.9204309350942455,
+    "mape": 9.147347563947186
+  },
+  "baseline_rmse": 79130.35989775884,
+  "improvement_over_baseline_pct": 71.8234044938237,
+  "n_train": 1168,
+  "n_test": 292,
+  "features_used": [
+    "LotArea",
+    "LotFrontage",
+    "OverallQual",
+    "OverallCond",
+    "TotalBsmtSF",
+    "1stFlrSF",
+    "2ndFlrSF",
+    "GrLivArea",
+    "FullBath",
+    "HalfBath",
+    "BedroomAbvGr",
+    "TotRmsAbvGrd",
+    "Fireplaces",
+    "GarageCars",
+    "GarageArea",
+    "WoodDeckSF",
+    "OpenPorchSF",
+    "house_age",
+    "remod_age",
+    "total_sqft",
+    "total_baths",
+    "has_garage",
+    "has_fireplace",
+    "was_remodeled",
+    "Neighborhood",
+    "HouseStyle",
+    "BldgType",
+    "CentralAir",
+    "SaleCondition",
+    "ExterQual",
+    "KitchenQual",
+    "BsmtQual",
+    "GarageType",
+    "FireplaceQu"
+  ]
+}
