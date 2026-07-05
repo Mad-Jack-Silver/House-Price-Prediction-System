@@ -1,13 +1,3 @@
-"""
-app.py
--------
-Interactive Streamlit demo for the House Price Prediction Platform,
-running on the real Kaggle Ames Housing model.
-
-Run locally:
-    streamlit run app.py
-"""
-
 import sys
 from pathlib import Path
 

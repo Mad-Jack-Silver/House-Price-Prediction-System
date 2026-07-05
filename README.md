@@ -9,8 +9,6 @@ is expected to own: real-world data cleaning, feature engineering,
 model selection, hyperparameter tuning, evaluation, and deployment as
 an interactive app.
 
-> **Live demo:** run `streamlit run app.py` for a clickable price-estimation UI.
-
 ---
 
 ## Results at a glance

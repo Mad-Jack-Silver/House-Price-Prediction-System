@@ -1,17 +1,3 @@
-"""
-evaluate.py
-------------
-Generates the diagnostic plots that go in the README / portfolio
-write-up:
-  1. Model comparison bar chart (CV RMSE across candidates)
-  2. Predicted vs Actual scatter
-  3. Residual plot
-  4. Feature importance (from the tuned tree model, or coefficient
-     magnitude if the winner is linear)
-  5. Correlation heatmap of engineered features
-
-"""
-
 import json
 import sys
 from pathlib import Path
