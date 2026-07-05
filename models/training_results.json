@@ -13,15 +13,15 @@
       "cv_rmse_std": 3539.9689704314237,
       "cv_mae_mean": 16426.13538913351,
       "cv_r2_mean": 0.8799785726625112,
-      "fit_time_sec": 0.38
+      "fit_time_sec": 0.43
     },
     {
       "model": "RandomForest",
-      "cv_rmse_mean": 27398.834594749245,
-      "cv_rmse_std": 3292.3644483830835,
-      "cv_mae_mean": 17777.754411823807,
+      "cv_rmse_mean": 27398.834594749234,
+      "cv_rmse_std": 3292.3644483831063,
+      "cv_mae_mean": 17777.754411823797,
       "cv_r2_mean": 0.8610494602082476,
-      "fit_time_sec": 2.28
+      "fit_time_sec": 2.53
     },
     {
       "model": "XGBoost",
@@ -29,7 +29,7 @@
       "cv_rmse_std": 3102.5003390668985,
       "cv_mae_mean": 18497.648046875,
       "cv_r2_mean": 0.8494289636611938,
-      "fit_time_sec": 0.75
+      "fit_time_sec": 0.93
     },
     {
       "model": "LinearRegression",
@@ -37,7 +37,7 @@
       "cv_rmse_std": 26984.197269808705,
       "cv_mae_mean": 18552.865928162675,
       "cv_r2_mean": 0.5598822447552754,
-      "fit_time_sec": 1.77
+      "fit_time_sec": 2.09
     },
     {
       "model": "Ridge",
@@ -45,7 +45,7 @@
       "cv_rmse_std": 27649.60497915898,
       "cv_mae_mean": 18411.039252911694,
       "cv_r2_mean": 0.5515804862884577,
-      "fit_time_sec": 1.37
+      "fit_time_sec": 1.56
     }
   ],
   "test_metrics": {

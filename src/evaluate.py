@@ -33,9 +33,11 @@ def plot_model_comparison(results: dict):
     ax.set_xlabel("Cross-Validated RMSE ($, lower is better)")
     ax.set_title("Model Comparison — 5-Fold Cross-Validation")
     ax.invert_yaxis()
-    for bar, val in zip(bars, df["cv_rmse_mean"]):
-        ax.text(val + 500, bar.get_y() + bar.get_height() / 2, f"${val:,.0f}",
-                va="center", fontsize=9)
+    for bar, val, std in zip(bars, df["cv_rmse_mean"], df["cv_rmse_std"]):
+        label_x = val + std + (df["cv_rmse_mean"].max() * 0.02)
+        ax.text(label_x, bar.get_y() + bar.get_height() / 2, f"${val:,.0f}",
+            va="center", fontsize=9)
+    ax.set_xlim(right=(df["cv_rmse_mean"] + df["cv_rmse_std"]).max() * 1.15)
     plt.tight_layout()
     plt.savefig(VISUALS_DIR / "model_comparison.png")
     plt.close()
